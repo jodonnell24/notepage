@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>README – My Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body{max-width:650px;margin:0 auto;font-family:system-ui,line-height:1.6}
+  </style>
+</head>
+<body>
+  <h1>README</h1>
+  <p><em>2025-10-16</em> — read me</p>
+  <h2>notepage.</h2>
+<h3>share your markdown notes as html with tha world 😁😁😁</h3>
+<h4>notepage turns markdown files into a complete HTML webpages with:</h4>
+<ul>
+<li>HTML5 doctype and structure</li>
+<li>Meta tags for character encoding and mobile viewport</li>
+<li>Inline CSS for basic styling (max-width, centered, system font)</li>
+<li>Post title as both page title and main heading</li>
+<li>Date and description in a paragraph</li>
+<li>Main content area with the converted markdown</li>
+</ul>
+<h3>what works:</h3>
+<ul>
+<li>markdown turns into cool html webpage</li>
+</ul>
+<h3>what doesn't work</h3>
+<ul>
+<li>a lot</li>
+<li>notes that don't start with a date in %Y-%m-%d format lol</li>
+<li>notes without toml frontmatter, example:</li>
+</ul>
+<pre><code class="language-m">  +++
+  title = "README"
+  description = "read me"
+  +++
+</code></pre>
+<p>For my use case, converting obsidian notes into html,
+seems like it works pretty well!</p>
+<p>However, .md files are expected to start with a date in %Y-%m-%d format,
+which can be problematic as obviously not everyone structures their notes that way.</p>
+<h3>Usage</h3>
+<ul>
+<li>
+<p>contents/ for markdown files</p>
+</li>
+<li>
+<p>public/ for the converted html files</p>
+</li>
+<li>
+<p>configure template.rs to change the html output, and inline css</p>
+</li>
+<li>
+<p>configue config.toml to change page title and base url for all 'posts'</p>
+</li>
+</ul>
+
+</body>
+</html>
