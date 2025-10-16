@@ -1,0 +1,40 @@
+## notepage.
+
+### share your markdown notes as html with tha world 😁😁😁
+
+#### notepage turns markdown files into a complete HTML webpages with:
+
+  - HTML5 doctype and structure
+  - Meta tags for character encoding and mobile viewport
+  - Inline CSS for basic styling (max-width, centered, system font)
+  - Post title as both page title and main heading
+  - Date and description in a paragraph
+  - Main content area with the converted markdown
+
+### what works: 
+- markdown turns into cool html webpage
+
+### what doesn't work
+- a lot
+- notes that don't start with a date in %Y-%m-%d format lol
+- notes without toml frontmatter, example:
+
+```m
+  +++
+  title = "README"
+  description = "read me"
+  +++
+```
+
+For my use case, converting obsidian notes into html, 
+seems like it works pretty well!
+
+However, .md files are expected to start with a date in %Y-%m-%d format,
+which can be problematic as obviously not everyone structures their notes that way.
+
+### Usage 
+- contents/ for markdown files
+- public/ for the converted html files
+
+- configure template.rs to change the html output, and inline css
+- configue config.toml to change page title and base url for all 'posts'
